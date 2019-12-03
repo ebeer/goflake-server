@@ -34,6 +34,7 @@ func Id(w http.ResponseWriter, r *http.Request) {
 
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	w.WriteHeader(http.StatusOK)
+	log.Printf("this is a useless code change to trigger kpack build")
 
 	ids := []string{}
 	for i := 0; i < count; i++ {
